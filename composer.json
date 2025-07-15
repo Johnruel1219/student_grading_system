@@ -1,0 +1,16 @@
+{
+    "name": "areja/gs",
+    "description": "Basic Student Grading",
+    "license": "\"MIT\"",
+    "autoload": {
+        "psr-4": {
+            "Areja\\Gs\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Areja"
+        }
+    ],
+    "require": {}
+}
