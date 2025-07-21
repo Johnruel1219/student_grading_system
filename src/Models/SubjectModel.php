@@ -1,8 +1,8 @@
 <?php
 
-namespace Areja\Gs\Models;
+//namespace Areja\Gs\Models;
 
-class SubjectModel implement  {
+//class SubjectModel implement  {
 
 
-}
+//}

@@ -1,6 +1,6 @@
 <?php
 
-namespace Areja\Gs\core;
+namespace Areja\Gs\Core;
 
 class DataStore
 {

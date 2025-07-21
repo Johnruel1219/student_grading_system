@@ -1,7 +1,13 @@
 <?php
 
-use Areja\Gs\Models\
+use Areja\Gs\Models\StudentModel;
+use Areja\Gs\Core\Database;
+
+
 require 'vendor/autoload.php';
 
-$student1 = new StudentModel;
-var_dump($student1);
+$studen = new StudentModel;
+
+$listofStudents = $student->read();
+
+print_r($listofStudent);
