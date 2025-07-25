@@ -8,6 +8,12 @@ require 'vendor/autoload.php';
 
 $student = new StudentModel;
 
-$shabu = $student->read();
+$student->id = 2345;
+$student->name = "areja";
+$student->year_level = 2;
+$student->section = "D";
+$student->course = "BSIT";
 
-print_r($shabu);
+$listofStudents = $student->read();
+
+print_r($listofStudents);
