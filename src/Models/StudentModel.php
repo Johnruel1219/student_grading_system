@@ -3,6 +3,7 @@
 namespace Areja\Gs\Models;
 
 use Areja\Gs\Core\Crud;
+use Areja\Gs\Core\Database;
 
 class StudentModel extends Database implements Crud {
 
@@ -26,7 +27,8 @@ class StudentModel extends Database implements Crud {
     }
     public function create(){
         //create data
-        //$query = $this->conn->prepare("INSERT INTO `srudent`(`id`, `name`, `year_level`, `section`, `course`) VALUES ('[value-1]','[value-2]','[value-3]','[value-4]','[value-5]')");
+        $query = $this->conn->prepare("INSERT INTO `srudent`(`id`, `name`, `year_level`, `section`, `course`) 
+        VALUES ('$this->id','$this->name','$this->year_level','$this->section','$this->course')");
     
     }
     public function read(){ try {
@@ -38,10 +40,11 @@ class StudentModel extends Database implements Crud {
     }
 
     }
-    public function update(){
+    public function update($id){
+    
 
     }
-    public function delete(){
+    public function delete($id){
         
     }
 }

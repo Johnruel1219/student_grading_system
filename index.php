@@ -6,8 +6,8 @@ use Areja\Gs\Core\Database;
 
 require 'vendor/autoload.php';
 
-$studen = new StudentModel;
+$student = new StudentModel;
 
-$listofStudents = $student->read();
+$shabu = $student->read();
 
-print_r($listofStudent);
+print_r($shabu);
