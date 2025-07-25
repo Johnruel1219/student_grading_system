@@ -8,12 +8,17 @@ require 'vendor/autoload.php';
 
 $student = new StudentModel;
 
-$student->id = 2345;
-$student->name = "areja";
+$student->id = 2;
+$student->name = "John";
 $student->year_level = 2;
 $student->section = "D";
 $student->course = "BSIT";
 
-$listofStudents = $student->read();
+//$listofStudents = $student->read();
+//print_r($listofStudents);
 
-print_r($listofStudents);
+
+$student->create();
+//$student->read();
+//$student->update(20246241411);
+//$student->delete(1);
